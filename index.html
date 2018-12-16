@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div  ng-controller="QuestionController">
+  <div class="main">
+
+
+    <p>In the background, the element is shown or hidden by removing or adding the .ng-hide CSS class onto the element. </p>
+
+    <div class="button">
+      <button class="bold" ng-click="bold()">Bold</button>
+      <button ng-click="italic()">Italic</button>
+      <button ng-click="decoration()">Decoration</button>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript">
+var myApp = angular.module('myApp', []);
+</script>
+<script src="js/controllers/QuestionController.js"></script>
+</body>
+</html>
